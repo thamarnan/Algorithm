@@ -50,3 +50,18 @@ thisdict =	{
 }
 thisdict["color"] = "red"
 print(thisdict)
+
+
+
+a = "Hello, World!"
+a[1]
+b[2:5]
+a.strip() #trim surround whitesp
+len(a)
+	str = "abc"
+	for i in range(len(str)):
+a.lower()
+a.upper()
+a.replace("F","R")
+a.split(",")
+"Hello" + a
