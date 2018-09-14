@@ -65,3 +65,50 @@ a.upper()
 a.replace("F","R")
 a.split(",")
 "Hello" + a
+
+
+with open('filename.txt') as fp:
+    for line in fp:
+        print line
+
+
+import sys
+print "script name: ", sys.argv[0]
+print "# of arguments: ", len(sys.argv)
+print "all argument: " , str(sys.argv)
+
+from urllib.parse import urlencode
+from urllib.request import Request, urlopen
+
+url = 'https://httpbin.org/post' # Set destination URL here
+post_fields = {'foo': 'bar'}     # Set POST fields here
+
+request = Request(url, urlencode(post_fields).encode())
+json = urlopen(request).read().decode()
+print(json)
+
+
+for i in range(5):
+	print(i)
+	
+for x in range(0, 10,3): # 0,3,6,9
+	print "we are at %d" % (x)
+
+a = ['Mary', 'had', 'a', 'little', 'lamb']
+for i in range(len(a)):
+	print(i, a[i])
+
+x = 1
+while True:
+    print "we are at %d " % (x)
+    x += 1
+
+if expression1:
+   statement(s)
+elif expression2:
+   statement(s)
+else:
+   statement(s)
+
+
+
